@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdbool.h>
+ 
+void fibprint(unsigned long long int a,unsigned long long int b, unsigned long long int n) {
+    if (0 < n) {
+        printf("%d ", a);
+        fibprint(b, a + b, n - 1);
+    }
+}
+ 
+void fib(unsigned long long int n) {
+    fibprint(1, 1, n);
+}
+ 
+int main() {
+    unsigned long long int i;
+    for (i = 1000; i <= 1000; ++i) {
+        fib(i);
+        printf("\n");
+    }
+ 
+    return 0;
+}
+
